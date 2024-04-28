@@ -39,6 +39,8 @@ rapids_cuda_init_architectures(pyfaiss)
 rapids_cuda_init_architectures(faiss_c_library)
 endif()
 
+set(CMAKE_CUDA_COMPILER /usr/local/cuda-11.8/bin/nvcc)
+
 project(faiss
   VERSION 1.7.4
   DESCRIPTION "A library for efficient similarity search and clustering of dense vectors."
